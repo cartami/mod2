@@ -2,9 +2,9 @@ import React from "react";
 
 function About() {
   return (
-    <div className="m-5">
-      <h1>About Page</h1>
-      <p>
+    <div className="m-5 relative flex flex-wrap justify-center items-center p-0.5">
+      <h1 className="my-5 font-serif">About Page</h1>
+      <p className="font-serif text-base text-violet-700">
         A product recall usually involves the following steps, which may differ
         according to local laws: Maker or dealer notifies the authorities
         responsible of their intention to recall a product. In some cases the

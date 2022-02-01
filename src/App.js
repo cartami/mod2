@@ -87,12 +87,13 @@ function App() {
 
   function Home() {
     return (
-      <div>
-        <h1 className="text-gray-500">
-          Car Recall Search - Enter car information{" "}
+      <div className="block">
+        <h1 className="text-gray-500 mb-3 pl-3">
+          Car Recall Search - Enter car VIN#{" "}
         </h1>
         <header>
-        <input
+        <input className="block mb-2.5 w-auto bg-[#ced7dd] text-[#1b1b1b] 
+          rounded-sm border-solid"
           type="text"
           value={vinData}
           placeholder="itemName"
@@ -106,9 +107,11 @@ function App() {
     );
   }
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 relative m-0 font-sans 
+    text-2xl text-violet-700 ">
       <Router>
-        <nav>
+        <nav className="flex flex-row justify-around 
+        items-center p-[1%]">
           <Link to="/">Home </Link>
           <Link to="/contact">Contact </Link>
           <Link to="/about">About</Link>
